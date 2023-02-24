@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachureando</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<!-- Reloj -->
+<body onload="clock()">
+    <!-- navbar -->
+    <header >
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img class="nav__img" src="./img/gancho-de-ropa(1).png">
+                </a>
+            </div>
+            <div class="nav__toggle">
+                <span class="nav__toggle-icon">☰</span>
+            </div>
+            <ul class="list">
+                <li class="list__li"><a class="list__a" href="./index.html#quierocomprar">Quiero comprar</a></li>
+                <li class="list__li"><a class="list__a" href="./quierovender.html">Quiero vender</a></li>
+                <li class="list__li"><a class="list__a" href="./contacto.html">Contacto</a></li>
+                <li class="list__li"><a class="list__a" href="./encuesta.html">Encuesta</a></li>
+                <li class="list__li"><a class="list__a" href="./carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Encabezado de la pagina -->
+    <main>
+        <section class="section">
+            <h2 class="section__title">Contacto</h2>
+
+    <!-- Bloque Contenido -->
+    <div class="form">
+    <form action="POST">   <!--bloque form -->
+        <div class="form__group">
+            <label for="name" class="form__label">Nombre</label> <!--elemento -->
+            <input type="text" id="name" class="form__input" placeholder="Ingresa tu nombre">
+            </div>
+        <div class="form__group">
+            <label for="lastname" class="form__label">Apellido</label> <!--elemento -->
+            <input type="text" id="lastname" class="form__input" placeholder="Ingresa tu apellido">
+            </div>
+        <div class="form__group">
+            <label for="email" class="form__label">Correo</label> <!--elemento -->
+            <input type="email" id="email" class="form__input" placeholder="Ingresa tu email">
+        </div>
+        <div  class="form__group">
+            <label for="message" class="form__label">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="form__textarea" 
+            placeholder="Cuéntanos que piensas"></textarea>
+            </div>
+        <input type="button" value="Enviar" class="form__button" name="send" id="send">
+    </form>
+    </div>
+    </section>
+    </main>
+
+    <script src="/js/contacto.js"></script>
+
+    <!-- Fin Bloque Contenido -->
+
+    <!-- Iconos Flotantes -->
+    <div class="float-icon float-icon--cart">
+        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
+    </div>
+    <div class="float-icon float-icon--whatsapp">
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
+    </div>
+    <!-- Fin Iconos Flotantes -->
+
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+
+    <!-- PIE DE PÁGINA-->
+    <footer>
+        <div class="footer">
+            <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
+            <div class="">
+                <div  id="clock" class="footer__clock"></div>
+                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+                <div class="social">
+                    <a href=""><img class="social__icon" src="./img/instagram(1).png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/facebook.png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/twitter.png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FIN PIE DE PÁGINA-->
+
+    <!-- Jquery y Js-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <!-- Fin Jquery y Js-->
+
+</body>
+</html>
