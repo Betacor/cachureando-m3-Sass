@@ -1,9 +1,28 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
+
+.hero__img {
+  object-fit: cover;
+  /* object-position: 0%; */
+  width: 100%;
+  max-height: 40rem; }
+
+.float-icon {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 20px;
+  border-radius: 50%;
+  padding: 0; }
+  .float-icon--whatsapp {
+    bottom: 70px; }
+  .float-icon--cart {
+    bottom: 130px; }
 
 .footer {
   background-color: #FAA6BD;
@@ -35,5 +54,162 @@
 
 .social__icon:hover {
   opacity: 0.4; }
+
+.nav {
+  width: 100%;
+  height: 90px;
+  background-color: #FAA6BD;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 2; }
+  .nav__logo {
+    padding: 10px;
+    width: auto;
+    float: left; }
+  .nav__img {
+    height: 55px; }
+  .nav__toggle {
+    display: none; }
+  .nav__toggle-icon {
+    float: right;
+    margin: 20px;
+    color: #EEE;
+    font-size: 30px;
+    /* border: 1px solid #EEE; */
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer; }
+  .nav__ul {
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+    list-style: none; }
+  .nav__li {
+    float: left;
+    padding: 13px 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out; }
+  .nav__a {
+    color: white;
+    text-decoration: none; }
+  .nav__li:hover {
+    background-color: #e95d79; }
+
+/*   Navbar Responsive  */
+@media (max-width: 1200px) {
+  .nav__toggle {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: #FAA6BD; }
+
+  .nav__ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #FAA6BD;
+    display: none; }
+
+  .nav__li {
+    text-align: center;
+    display: block;
+    float: none; } }
+/*   Secciones Global   */
+.section {
+  padding: 6rem; }
+  .section__title {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    color: #8C797E; }
+  .section__text {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+    letter-spacing: .05rem;
+    text-align: justify;
+    color: #8C797E;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */ }
+
+/*  Sección Quiero vender   */
+.section-sale {
+  background-color: #ffcecea5;
+  padding: 6rem; }
+  .section-sale__group {
+    align-content: center;
+    text-align: center; }
+  .section-sale__btn {
+    border: 2px solid #F3969A;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+    background-color: #FFDFDF;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: #F3969A; }
+  .section-sale__a {
+    color: #8C797E;
+    text-decoration: none; }
+  .section-sale__btn:hover {
+    background: #F3969A;
+    color: white; }
+  .section-sale__a:hover {
+    color: white; }
+
+/*  Sección Encuesta  */
+.section-survey {
+  background-color: #F3969A;
+  text-align: center;
+  color: #FFF;
+  padding: 4rem; }
+
+.section-survey__img {
+  padding-bottom: 3rem;
+  margin-top: 50px; }
+
+.section-survey__title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  margin-bottom: .5rem; }
+
+.section-survey__text {
+  font-size: 1.1rem;
+  margin: 0 20%;
+  letter-spacing: .05rem; }
+
+.section-survey__option {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.section-survey__container-options {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 1rem; }
+
+.section-survey__alert {
+  background-color: #d0748c;
+  padding: 10px; }
+
+.section-survey__alert-a {
+  color: white;
+  text-decoration: none; }
 
 /*# sourceMappingURL=estilos.css.map */
