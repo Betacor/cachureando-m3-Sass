@@ -1,0 +1,34 @@
+.footer {
+    background-color: #FAA6BD;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    /* margin-top: 4rem; */
+    padding: 4rem;
+    text-align: right;
+    letter-spacing: .05rem;
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+    &__clock {
+        padding-top: 2rem;
+        text-align: right;
+        font-family: 'Poppins', sans-serif;
+        font-size: larger;
+        background-color: #FAA6BD;
+        color: #FFF;
+    }
+}
+
+.social {
+    margin-top: 1rem;
+    text-align: right;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.social__icon{
+    width: 2.5rem;
+}
+.social__icon:hover {
+    opacity: 0.4;
+}
