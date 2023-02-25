@@ -1,7 +1,7 @@
 .footer {
-    background-color: #FAA6BD;
+    background-color: $color-primary;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: $color-text-secondary;
     /* margin-top: 4rem; */
     padding: 4rem;
     text-align: right;
@@ -15,8 +15,8 @@
         text-align: right;
         font-family: 'Poppins', sans-serif;
         font-size: larger;
-        background-color: #FAA6BD;
-        color: #FFF;
+        background-color: $color-primary;
+        color: $color-text-secondary;
     }
 }
 

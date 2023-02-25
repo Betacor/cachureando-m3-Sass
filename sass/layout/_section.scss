@@ -12,14 +12,14 @@
         text-align: center;
         font-weight: 600;
         letter-spacing: .2rem;
-        color: #8C797E;
+        color: $color-text-primary;
     }
     &__text {
         font-family: 'Poppins', sans-serif;
         padding: 2rem;
         letter-spacing: .05rem;
         text-align: justify;
-        color: #8C797E;
+        color: $color-text-primary;
         /* margin-left: 10rem;
         margin-right: 10rem; */
     }
@@ -27,31 +27,29 @@
 
 /*  Sección Quiero vender   */
 .section-sale {
-    background-color: #ffcecea5;
+    background-color: $color-secondary;
     padding: 6rem;
     &__group {
         align-content: center;
         text-align: center;
     }
     &__btn {
-        border: 2px solid #F3969A;
+        border: 2px solid $color-btn;
         font-family: 'Poppins', sans-serif;
         border-radius: 0.5rem;
-        background-color: #FFDFDF;
-        color: black;
+        background-color: $color-secondary;
         padding: 14px 28px;
         font-size: 16px;
         cursor: pointer;
         margin-top: 2rem;
-        color: #F3969A;
     }
     &__a{
-        color: #8C797E;
+        color: $color-text-primary;
         text-decoration: none;
     }
     &__btn:hover{
-        background: #F3969A;
-        color: white;
+        background: $color-btn;
+        color: $color-text-secondary;
     }
     &__a:hover{
         color: white;
@@ -61,9 +59,9 @@
 
 /*  Sección Encuesta  */
 .section-survey {
-    background-color: #F3969A;
+    background-color: $color-tertiary;
     text-align: center;
-    color: #FFF;
+    color: $color-text-secondary;
     padding: 4rem;
     &__img {
         padding-bottom: 3rem;
@@ -94,11 +92,11 @@
         padding: 1rem;
     }
     &__alert{
-        background-color: #d0748c ;
+        background-color: $color-alert;
         padding: 10px;
     }
     &__alert-a{
-        color: white;
+        color: $color-text-secondary;
         text-decoration: none;
     }
 }

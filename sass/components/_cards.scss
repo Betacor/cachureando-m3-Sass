@@ -31,12 +31,12 @@
     }
     &__title {
         margin-bottom: 15px;
-        color: #8C797E;
+        color: $color-text-primary;
         font-weight: 500;
     }
     &__text {
         line-height: 1.8;
-        color: #6a6a6a;
+        color: $color-text-primary;
         font-size: 14px;
         margin-bottom: 5px;   
     }
@@ -45,14 +45,14 @@
         padding: 10px;
         margin-top: 10px;
         text-decoration: none;
-        color: #f3969a;
-        border: 1px solid #f3969a;
+        color: $color-btn;
+        border: 1px solid $color-btn;
         border-radius: 4px;
         transition: all 400ms ease;
         margin-bottom: 5px;
     }
     &__btn:hover {
-        background: #f3969a;
+        background: $color-btn;
         color: #fff;
     }
 }
@@ -74,7 +74,7 @@
     background: #fff;
     cursor: default;
     &__p{
-        color: $color-text;
+        color: $color-text-primary;
         font-size: 0.7rem;
         padding-bottom: 1.5em;
     }
