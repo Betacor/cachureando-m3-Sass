@@ -282,7 +282,8 @@
     padding: 1rem; }
   .section-survey__alert {
     background-color: #D0748C;
-    padding: 10px; }
+    padding: 10px;
+    border-radius: 10px; }
   .section-survey__alert-a {
     color: white;
     text-decoration: none; }
