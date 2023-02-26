@@ -16,18 +16,18 @@
     width: 60vw;
     border-radius: 5px;
     padding: 5px 8px;
-    border: solid 1px #cfcece;
+    border: solid 1px $color-border-form;
 }
 .form__textarea {
     width: 60vw;
-    border: solid 1px #cfcece;
+    border: solid 1px $color-border-form;
     padding: 5px 8px;
     border-radius: 5px;
     resize: none;
 }
 .form__button {
     border: solid 1px $color-btn;
-    background-color: white;
+    background-color: $color-text-secondary;
     color: $color-btn;
     padding: 10px;
     border-radius: 5px;
@@ -36,6 +36,6 @@
 }
 .form__button:hover {
     border: solid 1px $color-btn;
-    color: white;
+    color: $color-text-secondary;
     background-color: $color-btn;
 }
