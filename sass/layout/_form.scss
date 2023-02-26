@@ -4,28 +4,28 @@
     align-items: center;
     padding: 20px;
 }
-.form__group {
+&__group {
     margin: 0px 0px 10px 0px;
     display: flex;
     flex-direction: column;
 }
-.form__label{
+&__label{
     color: $color-text-primary;
 }
-.form__input {
+&__input {
     width: 60vw;
     border-radius: 5px;
     padding: 5px 8px;
     border: solid 1px $color-border-form;
 }
-.form__textarea {
+&__textarea {
     width: 60vw;
     border: solid 1px $color-border-form;
     padding: 5px 8px;
     border-radius: 5px;
     resize: none;
 }
-.form__button {
+&__button {
     border: solid 1px $color-btn;
     background-color: $color-text-secondary;
     color: $color-btn;
@@ -34,7 +34,7 @@
     transition: all 0.5s;
     cursor: pointer;
 }
-.form__button:hover {
+&__button:hover {
     border: solid 1px $color-btn;
     color: $color-text-secondary;
     background-color: $color-btn;
