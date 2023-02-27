@@ -1,6 +1,6 @@
 /*
 Error: File to import not found or unreadable: mixins/banner.
-       Load path: D:/UNAB Frontend/Modulos/M3/Tareas/cachureando-m3-Sass/sass
+       Load path: C:/Users/lah_f/OneDrive/Documentos/CURSO APLICACIONES FRONT-END TRAINEE/MODULO 3/cachureando-m3-Sass/sass
         on line 1 of sass/vendors/bootstrap.scss
 
 1: @import "mixins/banner";
@@ -56,4 +56,4 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: mixins/banner.\A        Load path: D:/UNAB Frontend/Modulos/M3/Tareas/cachureando-m3-Sass/sass\A         on line 1 of sass/vendors/bootstrap.scss\A \A 1: @import \"mixins/banner\";\A 2: @include bsBanner(\"\");\A 3: \A 4: \A 5: // scss-docs-start import-stack\A 6: // Configuration"; }
+  content: "Error: File to import not found or unreadable: mixins/banner.\A        Load path: C:/Users/lah_f/OneDrive/Documentos/CURSO APLICACIONES FRONT-END TRAINEE/MODULO 3/cachureando-m3-Sass/sass\A         on line 1 of sass/vendors/bootstrap.scss\A \A 1: @import \"mixins/banner\";\A 2: @include bsBanner(\"\");\A 3: \A 4: \A 5: // scss-docs-start import-stack\A 6: // Configuration"; }
