@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Betacor/cachureando-m3-Sass/issues"
   },
-  "homepage": "https://github.com/Betacor/cachureando-m3-Sass#readme"
+  "homepage": "https://github.com/Betacor/cachureando-m3-Sass#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
