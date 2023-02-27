@@ -1,0 +1,45 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    &__group {
+        margin: 0px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        color: $color-text-primary;
+    }
+    &__input {
+        width: 60vw;
+        border-radius: 5px;
+        padding: 5px 8px;
+        border: solid 1px $color-border-form;
+    }
+    &__input-file {
+        color: $color-text-primary;
+    }
+    &__textarea {
+        width: 60vw;
+        border: solid 1px $color-border-form;
+        padding: 5px 8px;
+        border-radius: 5px;
+        resize: none;
+    }
+    &__button {
+        border: solid 1px $color-btn;
+        background-color: $color-text-secondary;
+        color: $color-btn;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    &__button:hover {
+        border: solid 1px $color-btn;
+        color: $color-text-secondary;
+        background-color: $color-btn;
+    }
+}
