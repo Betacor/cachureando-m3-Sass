@@ -1,0 +1,23 @@
+{
+  "name": "cachureando-m3-sass",
+  "version": "1.0.0",
+  "description": "https://github.com/betacor/cachureando-m3-v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betacor/cachureando-m3-Sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Betacor/cachureando-m3-Sass/issues"
+  },
+  "homepage": "https://github.com/Betacor/cachureando-m3-Sass#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
