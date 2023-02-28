@@ -93,7 +93,8 @@
   object-fit: cover;
   /* object-position: 0%; */
   width: 100%;
-  max-height: 40rem; }
+  max-height: 40rem;
+  margin-top: 50px; }
 
 .float-icon {
   width: 50px;
