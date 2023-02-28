@@ -1,51 +1,12 @@
-@import "mixins/banner";
-@include bsBanner("");
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
 
-
-// scss-docs-start import-stack
-// Configuration
-@import "functions";
-@import "variables";
-@import "maps";
-@import "mixins";
-@import "utilities";
-
-// Layout & components
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
-
-// Helpers
-@import "helpers";
-
-// Utilities
-@import "utilities/api";
-// scss-docs-end import-stack
