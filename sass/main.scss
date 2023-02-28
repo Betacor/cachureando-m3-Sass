@@ -1,11 +1,12 @@
 @import "abstracts/variables";
 @import "base/reset";
 @import "base/typography";
-@import "vendors/bootstrap.scss";
+@import "vendors/bootstrap";
 @import "components/cards";
 @import "components/hero";
 @import "components/float-icons";
 @import "components/survey";
+@import "components/breadcrumbs";
 @import "layout/footer";
 @import "layout/navbar";
 @import "layout/section";
