@@ -1,113 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calzado</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calzado</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
 
-<body onload="clock()">
-    <!-- ENCABEZADO DE LA PAGINA -->
-    <header>
-        <!-- navbar -->
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="./index.html">
-                    <img class="nav__img" src="./img/gancho-de-ropa(1).png">
-                </a>
-            </div>
-            <div class="nav__toggle">
-                <span class="nav__toggle-icon">☰</span>
-            </div>
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__a" href="./index.html#quiero_comprar">Quiero comprar</a></li>
-                <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
-                <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
-                <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
-                <li class="nav__li"><a class="nav__a" href="./carrito.html">Carrito</a></li>
-            </ul>
+    <body onload="clock()">
+        <!-- ENCABEZADO DE LA PAGINA -->
+        <header>
+            <!-- navbar -->
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="./index.html">
+                        <img class="nav__img" src="./img/gancho-de-ropa(1).png">
+                    </a>
+                </div>
+                <div class="nav__toggle">
+                    <span class="nav__toggle-icon">☰</span>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__a"
+                            href="./index.html#quiero_comprar">Quiero comprar</a></li>
+                    <li class="nav__li"><a class="nav__a"
+                            href="./quierovender.html">Quiero vender</a></li>
+                    <li class="nav__li"><a class="nav__a"
+                            href="./contacto.html">Contacto</a></li>
+                    <li class="nav__li"><a class="nav__a"
+                            href="./encuesta.html">Encuesta</a></li>
+                    <li class="nav__li"><a class="nav__a" href="./carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIN ENCABEZADO DE LA PAGINA -->
+
+
+        <!--CONTENIDO DE LA PAGINA -->
+        <section class="section">
+        <!-- Inicio Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html#quiero_comprar">Quiero comprar</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Calzado</li>
+            </ol>
         </nav>
-    </header>
-    <!-- FIN ENCABEZADO DE LA PAGINA -->
+        <!-- Fin Breadcrumbs -->
+            <h2 class="section__title">CALZADO</h2>
 
+            <!-- Tarjetas de productos -->
+            <div class="container__products-cards">
+                <div class="product-card">
+                    <figure>
+                        <img class="card__img"
+                            src="https://static.zara.net/photos///2022/I/1/1/p/2214/010/009/2/w/750/2214010009_6_1_1.jpg?ts=1657725357074">
+                    </figure>
+                    <div class="card__content card__content--right">
+                        <h3 class="card__title">Zapato tacón alto azul</h3>
+                        <a href="#" onclick="mostrar()"> <img
+                                src="./img/agregar-carrito(2).png" width="30"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <figure>
+                        <img class="card__img"
+                            src="https://static.zara.net/photos///2022/I/1/1/p/1208/010/009/2/w/750/1208010009_6_1_1.jpg?ts=1659022079287">
+                    </figure>
+                    <div class="card__content card__content--right">
+                        <h3 class="card__title">Zapato tacón celeste</h3>
+                        <a href="#" onclick="mostrar()"> <img
+                                src="./img/agregar-carrito(2).png" width="30"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <figure>
+                        <img class="card__img"
+                            src="https://static.zara.net/photos///2023/W/1/1/p/2221/110/001/4/w/750/2221110001_6_1_1.jpg?ts=1674072603303">
+                    </figure>
+                    <div class="card__content card__content--right">
+                        <h3 class="card__title">Zapato tacón bajo</h3>
+                        <a href="#" onclick="mostrar()"> <img
+                                src="./img/agregar-carrito(2).png" width="30"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <figure>
+                        <img class="card__img"
+                            src="https://static.zara.net/photos///2023/W/1/1/p/3720/110/001/2/w/750/3720110001_6_1_1.jpg?ts=1674478651093">
+                    </figure>
+                    <div class="card__content card__content--right">
+                        <h3 class="card__title">Zapato blanco</h3>
+                        <a href="#" onclick="mostrar()"> <img
+                                src="./img/agregar-carrito(2).png" width="30"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tarjetas de Productos-->
+        </section>
 
-    <!--CONTENIDO DE LA PAGINA -->
-    <section class="section">
-        <h2 class="section__title">CALZADO</h2>
-        
-        <!-- Tarjetas de productos -->
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/1/1/p/2214/010/009/2/w/750/2214010009_6_1_1.jpg?ts=1657725357074">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Zapato tacón alto azul</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/1/1/p/1208/010/009/2/w/750/1208010009_6_1_1.jpg?ts=1659022079287">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Zapato tacón celeste</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/1/1/p/2221/110/001/4/w/750/2221110001_6_1_1.jpg?ts=1674072603303">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Zapato tacón bajo</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/1/1/p/3720/110/001/2/w/750/3720110001_6_1_1.jpg?ts=1674478651093">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Zapato blanco</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
+        <!-- Iconos Flotantes -->
+        <div class="float-icon float-icon--cart">
+            <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png"
+                    alt="logo de carrito" width="50"></a>
         </div>
-        <!--Fin Tarjetas de Productos-->
-    </section>
+        <div class="float-icon float-icon--whatsapp">
+            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png"
+                    alt="logo de whatsapp" width="50"></a>
+        </div>
+        <!-- Fin Iconos Flotantes -->
 
-    <!-- Iconos Flotantes -->
-    <div class="float-icon float-icon--cart">
-        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
-    </div>
-    <div class="float-icon float-icon--whatsapp">
-        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
-    </div>
-    <!-- Fin Iconos Flotantes -->
-
-    <!-- PIE DE PAGINA -->
-    <footer>
-        <div class="footer">
-            <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
-            <div class="">
-                <div  id="clock" class="footer__clock"></div>
-                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
-                <div class="social">
-                    <a href=""><img class="social__icon" src="./img/instagram(1).png" alt=""></a>
-                    <a href=""><img class="social__icon" src="./img/facebook.png" alt=""></a>
-                    <a href=""><img class="social__icon" src="./img/twitter.png" alt=""></a>
-                    <a href=""><img class="social__icon" src="./img/youtube.png" alt=""></a>
+        <!-- PIE DE PAGINA -->
+        <footer>
+            <div class="footer">
+                <img class="footer__icon" src="./img/gancho-de-ropa(1).png"
+                    alt="">
+                <div class="">
+                    <div id="clock" class="footer__clock"></div>
+                    <p class="footer__text">Codecats | Viña de Mar | Región de
+                        Valparaíso | 2023</p>
+                    <div class="social">
+                        <a href=""><img class="social__icon"
+                                src="./img/instagram(1).png" alt=""></a>
+                        <a href=""><img class="social__icon"
+                                src="./img/facebook.png" alt=""></a>
+                        <a href=""><img class="social__icon"
+                                src="./img/twitter.png" alt=""></a>
+                        <a href=""><img class="social__icon"
+                                src="./img/youtube.png" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- Fin PIE DE PAGINA-->
+        </footer>
+        <!-- Fin PIE DE PAGINA-->
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
-    <script src="./js/index.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script> <!--Menú-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!--Alerta de carritos-->
+        <script src="./js/index.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    </body>
 </html>
