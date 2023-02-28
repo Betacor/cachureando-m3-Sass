@@ -163,6 +163,9 @@
     font-size: larger;
     background-color: #FAA6BD;
     color: white; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      font-size: small; } }
 
 .social {
   margin-top: 1rem;
