@@ -12,6 +12,9 @@
   display: flex;
   margin: auto;
   /* border: 1px solid red; */ }
+  @media only screen and (max-width: 56.25em) {
+    .container__cards {
+      flex-wrap: wrap; } }
 
 .card {
   width: 100%;
@@ -55,6 +58,9 @@
   .card__btn:hover {
     background: #F3969A;
     color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      margin: 15px; } }
 
 /*Tarjetas de Productos*/
 .container__products-cards {
@@ -63,6 +69,9 @@
   max-width: 1200px;
   margin: auto;
   /* border: 1px solid red; */ }
+  @media only screen and (max-width: 56.25em) {
+    .container__products-cards {
+      flex-wrap: wrap; } }
 
 .product-card {
   width: 100%;
@@ -76,20 +85,10 @@
     color: #8C797E;
     font-size: 0.7rem;
     padding-bottom: 1.5em; }
+  @media only screen and (max-width: 56.25em) {
+    .product-card {
+      margin: 15px; } }
 
-/*Tarjetas Responsive*/
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  .container__cards {
-    flex-wrap: wrap; }
-
-  .card {
-    margin: 15px; }
-
-  .container__products-cards {
-    flex-wrap: wrap; }
-
-  .product-card {
-    margin: 15px; } }
 .hero__img {
   object-fit: cover;
   /* object-position: 0%; */
