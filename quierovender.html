@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Cachureando</title>
 </head>
+
 <body onload="clock()">
 
     <!-- navbar -->
-    <header >
+    <header>
         <nav class="nav">
             <div class="nav__logo">
                 <a href="./index.html">
@@ -32,11 +34,19 @@
     </header>
 
     <!-- INICIO CONTENIDO PRINCIPAL -->
-        <main class="main">
-            <!-- INICIO DE SECCION -->
-            <section id="" class="section">
-                <h2 class="section__title">Quiero vender</h2>
-            
+    <main class="main">
+        <!-- INICIO DE SECCION -->
+        <section id="" class="section">
+            <!-- Inicio Breadcrumbs -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Quiero vender</li>
+                </ol>
+            </nav>
+            <!-- Fin Breadcrumbs -->
+            <h2 class="section__title">Quiero vender</h2>
+
             <!-- INICIO DE FORMULARIO -->
 
             <div class="form">
@@ -47,7 +57,8 @@
                     </div>
                     <div class="form__group">
                         <label for="password" class="form__label">Contraseña</label>
-                        <input type="password" class="form__input" name="password" id="password" placeholder="xxxxxxxxxxxx" required>
+                        <input type="password" class="form__input" name="password" id="password"
+                            placeholder="xxxxxxxxxxxx" required>
                     </div>
                     <div class="form__group">
                         <label for="sell" class="form__label">¿Qué vendes?</label>
@@ -61,10 +72,10 @@
                         <label for="upload-img" class="form__label">Sube una imagen</label>
                         <input type="file" accept=".jpg, .png" class="form__input form__input-file" name="upload-img" id="upload-img" required>
                     </div>
-                        <input type="button" class="form__button" name="send" id="send" value="Enviar">
+                    <input type="button" class="form__button" name="send" id="send" value="Enviar">
                 </form>
             </div>
-            </section>
+        </section>
     </main>
     <!-- Iconos Flotantes -->
     <div class="float-icon float-icon--cart">
@@ -82,7 +93,7 @@
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
             <div class="">
-                <div  id="clock" class="footer__clock"></div>
+                <div id="clock" class="footer__clock"></div>
                 <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
                 <div class="social">
                     <a href=""><img class="social__icon" src="./img/instagram(1).png" alt=""></a>
@@ -94,12 +105,14 @@
         </div>
     </footer>
     <!--FIN PIE DE PÁGINA-->
-            
-            <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-            <script src="./js/quierovender.js"></script>
-            <script src="./js/index.js"></script>
-            <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
-            <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
-                                    
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/quierovender.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
+
 </body>
+
 </html>
