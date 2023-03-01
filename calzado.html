@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calzado</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body onload="clock()">
@@ -35,6 +35,16 @@
 
     <!--CONTENIDO DE LA PAGINA -->
     <section class="section">
+        <!-- Inicio Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html#quiero_comprar">Quiero comprar</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Calzado</li>
+            </ol>
+        </nav>
+        <!-- Fin Breadcrumbs -->
+        
         <h2 class="section__title">CALZADO</h2>
         
         <!-- Tarjetas de productos -->
@@ -109,5 +119,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
     <script src="./js/index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
 </body>
 </html>
