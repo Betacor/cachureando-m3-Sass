@@ -16,6 +16,13 @@
     }
     &__toggle{
         display: none;
+
+        @include respond(tab){
+            display: block;
+            width: 100%;
+            height: 90px;
+            background-color: $color-primary;
+        }
     }
     &__toggle-icon {
         float: right;
@@ -32,6 +39,15 @@
         margin-right: 25px;
         margin-top: 17px;
         list-style: none;
+
+        @include respond(tab){
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: $color-primary;
+            display: none;
+        }
     }
     &__li {
         float: left;
@@ -40,6 +56,12 @@
         font-size: 18px;
         border-radius: 3px;
         transition: all .5s ease-in-out;
+
+        @include respond(tab){
+            text-align: center;
+            display: block;
+            float: none;
+        }
     }
     &__a {
         color: $color-text-secondary;
@@ -50,25 +72,3 @@
     }
 }
 
-/*   Navbar Responsive  */
-@media (max-width: 1200px) {
-    .nav__toggle{
-        display: block;
-        width: 100%;
-        height: 90px;
-        background-color: $color-primary;
-    }
-    .nav__ul {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        background-color: $color-primary;
-        display: none;
-    }
-    .nav__li {
-        text-align: center;
-        display: block;
-        float: none;
-    }
-}

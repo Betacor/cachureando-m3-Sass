@@ -18,6 +18,10 @@
         background-color: $color-primary;
         color: $color-text-secondary;
     }
+
+    @include respond(phone){
+        font-size: small;
+    }
 }
 
 .social {

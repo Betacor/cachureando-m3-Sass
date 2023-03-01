@@ -4,6 +4,10 @@
     display: flex;
     margin: auto;
     /* border: 1px solid red; */
+
+    @include respond(tab-port){
+        flex-wrap: wrap;
+    }
 }
 .card {
     width: 100%;
@@ -55,6 +59,10 @@
         background: $color-btn;
         color: #fff;
     }
+
+    @include respond(tab-port){
+        margin: 15px;
+    }
 }
 
 /*Tarjetas de Productos*/
@@ -64,6 +72,10 @@
     max-width: 1200px;
     margin: auto;
     /* border: 1px solid red; */
+
+    @include respond(tab-port){
+        flex-wrap: wrap;
+    }
 }
 .product-card {
     width: 100%;
@@ -78,21 +90,10 @@
         font-size: 0.7rem;
         padding-bottom: 1.5em;
     }
-}
 
-
-/*Tarjetas Responsive*/
-@media only screen and (min-width:0px) and (max-width:768px) {
-    .container__cards {
-        flex-wrap: wrap;
-    }
-    .card {
-        margin: 15px;
-    }
-    .container__products-cards {
-        flex-wrap: wrap;
-    }
-    .product-card {
+    @include respond(tab-port){
         margin: 15px;
     }
 }
+
+
