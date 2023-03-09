@@ -26,7 +26,6 @@
                 <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
                 <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
                 <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
-                <li class="nav__li"><a class="nav__a" href="./carrito.html">Carrito</a></li>
                 </ul>
         </nav>
     </header>
@@ -42,194 +41,202 @@
                 <li class="breadcrumb-item active" aria-current="page">Tops</li>
             </ol>
         </nav>
-        <!-- Fin Breadcrumbs -->
-        
+        <!-- Fin Breadcrumbs --> 
         <h2 class="section__title">TOPS</h2>
-        
-        <!-- Tarjetas de productos -->
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top fucsia</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
                 </div>
             </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/2142/808/800/2/w/750/2142808800_6_1_1.jpg?ts=1674547188580">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top negro</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/5133/840/307/2/w/750/5133840307_6_1_1.jpg?ts=1674547184153">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top blanco</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                    <button id="btn-pagar">PAGAR</button>
                 </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/122/540/2/w/750/5802122540_6_1_1.jpg?ts=1660895438265">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top verde</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/3471/104/406/2/w/750/3471104406_6_1_1.jpg?ts=1658906579501">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top celeste</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/V/0/1/p/1131/992/420/2/w/750/1131992420_6_1_1.jpg?ts=1648537718632">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top azul</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/5039/371/621/2/w/750/5039371621_6_1_1.jpg?ts=1671626025043">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top rosado</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/5039/371/321/2/w/750/5039371321_6_1_1.jpg?ts=1671622498442">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top amarillo</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
+                <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/6739/100/400/2/w/560/6739100400_6_1_1.jpg?ts=1670931108944">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Corsé denim</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/3519/030/066/2/w/560/3519030066_6_1_1.jpg?ts=1660230316464">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Crop rayas</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/S/0/1/p/4910/650/643/2/w/560/4910650643_6_1_1.jpg?ts=1665741109245">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Crop satín peach</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/5363/661/629/2/w/560/5363661629_6_1_1.jpg?ts=1669818638711">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Crop satín lila</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/V/0/1/p/2142/035/250/2/w/750/2142035250_6_1_1.jpg?ts=1677071345828"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>TOP PUNTO SISA ALGODÓN</h2>
+                <h5 class="product-card__p"> Top confeccionado con tejido 100% algodón. Cuello redondo y manga sisa. <br>SKU: 47098678</h5>
+                <p class="price">$18990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/0962/017/529/2/w/560/0962017529_6_1_1.jpg?ts=1675938208851">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Camiseta calipso</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2021/I/0/1/p/5039/463/529/2/w/850/5039463529_6_1_1.jpg?ts=1636460556917">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top verde</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/V/0/1/p/0858/022/630/2/w/560/0858022630_6_1_1.jpg?ts=1648049850615">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Polera fucsia</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2021/S/0/1/p/1014/300/620/2/w/560/1014300620_6_1_1.jpg?ts=1632210874123">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Top malva</h3>
-                    <p class="product-card__p"> 93% Poliéster | 3% Elastano <br>Importado</p>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2022/I/0/1/p/3471/104/406/2/w/750/3471104406_6_1_1.jpg?ts=1658906579501"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>BODY PUNTO RIB</h2>
+                <h5 class="product-card__p"> Body de escote pico y tirantes finos. Cierre en bajo con botones a presión. <br>SKU: 47098678</h5>
+                <p class="price">$23990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
-        <!--Fin Tarjetas de Productos-->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/0962/127/505/2/w/750/0962127505_6_1_1.jpg?ts=1673957488058"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAMISETA CROP OVERSIZE</h2>
+                <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <p class="price">$8990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/1660/801/600/2/w/750/1660801600_6_1_1.jpg?ts=1672842258537"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAMISETA CROP</h2>
+                <h5 class="product-card__p"> Camiseta de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <p class="price">$7990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/3519/825/940/2/w/750/3519825940_6_1_1.jpg?ts=1676543989746"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>TOP BÁSICO PUNTO CROPPED</h2>
+                <h5 class="product-card__p"> Top de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <p class="price">$18990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+       <!--Fin Tarjetas de Productos-->
     </section>
 
-    <!-- Iconos Flotantes -->
-    <div class="float-icon float-icon--cart">
-        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
-    </div>
-    <div class="float-icon float-icon--whatsapp">
-        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
-    </div>
-    <!-- Fin Iconos Flotantes -->
-
     <!-- FIN CONTENIDO DE LA PAGINA -->
-
-    <!-- PIE DE PAGINA -->
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Mi compra</span>
+                <button id="btn-cerrar">X</button>
+            </div>
+            <div class="lista-productos">
+                <H1>RESUMEN DE COMPRA</H1>
+                <div class="info-cart-product mb-4">
+                    <span class="cantidad-producto-carrito"> 1</span>
+                    <p class="titulo-producto-carrito">Top azul</p>
+                    <span class="precio-producto-carrito">$22990</span>  
+                </div>
+            </div>
+            <form action="">
+                <H1>DIRECCION DE DESPACHO</H1>
+                <div class="form-group">
+                    <label for="">NOMBRE</label>
+                    <input type="text"><p>
+                    Tu nombre</p>
+                </div>
+                <div class="form-group">
+                    <label for="">EMAIL</label>
+                    <input type="text"><p>
+                    tunombre@mail.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="">DIRECCION</label>
+                    <input type="text"><p>
+                    Calle, Ciudad, País</p>
+                </div>
+                <div class="form-group">
+                    <label for="">REGIÓN</label>
+                    <input type="text"><p>
+                    Región donde vives</p>
+                </div>
+                <div class="form-group">
+                    <label for="">COMUNA</label>
+                    <input type="text"><p>
+                    Comuna donde vives</p>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="">QUIEN RECIBE</label>
+                    <input type="text"><p>
+                    Quien recibirá el paquete</p>
+                </div>
+                <div class="form-footer">
+                <button type="button" id="btn-pagar-form">PAGAR</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito-exito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tu compra está siendo procesada</span>
+                <button id="btn-cerrar-exito">X</button>
+            </div>
+        </div>
+    </section>
+    <!-- PIE DE PAGINA -->  
     <footer>
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">

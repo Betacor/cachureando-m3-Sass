@@ -4436,3 +4436,282 @@
     background-color: #F3969A; }
 
 /*# sourceMappingURL=main.css.map */
+.container-icon{
+  position: relative;
+  width: 40px;
+  margin: 0 40px 2rem auto;
+  cursor: pointer;
+}
+
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+/* Main */
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item{
+  border-radius: 10px;
+}
+
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.item figure{
+  overflow: hidden;
+}
+
+.item:hover img{
+  transform: scale(1.2);
+}
+
+.info-product{
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.cart-empty{
+  padding: 20px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+/* ------ MODAL CARRITO ------ */
+#modal-carrito,
+#modal-carrito-exito{
+  background-color: rgba(0,0,0,.3);
+  backdrop-filter: blur(4px);
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100dvw;
+  height: 100dvh;
+}
+#modal-carrito[data-visible='true'],
+#modal-carrito-exito[data-visible='true']{
+  display:block;
+}
+.modal-content{
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  background-color: #FAA6BD;
+  padding: 2rem;
+}
+.modal-header{
+
+}
+.lista-productos{ 
+
+}
+
+#btn-cerrar,
+#btn-cerrar-exito{
+  float: right;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #222;
+  border-style: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-cerrar:hover{
+  opacity: .65;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-top: .2rem;
+}
+
+.form-group p{
+  font-size: 0.8rem;
+  color: #636363;}
+
+.form-group input{
+background-color: rgba(255, 255, 255, 0.445);
+height: 1.6rem;
+border-radius: 2px;
+border-style: none;
+}
+.form-group input:focus{
+  outline: none;
+}
+
+.form-footer {
+text-align: center;
+margin-top: 2rem;
+}
+
+#btn-pagar-form,
+#btn-pagar{
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 30%;
+  min-height: 44px;
+  min-width: 10px;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+#btn-pagar-form:hover,
+#btn-pagar:hover,
+#btn-pagar-form:focus,
+#btn-pagar:focus {
+  opacity: .65;
+}
