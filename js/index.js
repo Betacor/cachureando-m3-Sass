@@ -118,6 +118,18 @@ btnCerrar.addEventListener('click', ()=>{
 	modalConfirmacion.setAttribute("data-visible","false");
 });
 
+const modalCarritoExito = document.getElementById('modal-carrito-exito');
+const btnCerrarExito = document.getElementById('btn-cerrar-exito');
+btnCerrarExito.addEventListener('click', ()=>{
+	modalCarritoExito.setAttribute("data-visible","false");
+});
+
+const btnPagarForm = document.getElementById('btn-pagar-form');
+btnPagarForm.addEventListener('click', ()=>{
+	modalConfirmacion.setAttribute("data-visible","false");
+	modalCarritoExito.setAttribute("data-visible","true");
+});
+
 // Funcion para mostrar  HTML
 const showHTML = () => {
 	if (!allProducts.length) {

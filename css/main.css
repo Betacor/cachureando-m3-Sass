@@ -4612,7 +4612,8 @@
 }
 
 /* ------ MODAL CARRITO ------ */
-#modal-carrito{
+#modal-carrito,
+#modal-carrito-exito{
   background-color: rgba(0,0,0,.3);
   backdrop-filter: blur(4px);
   display: none;
@@ -4624,7 +4625,8 @@
   width: 100dvw;
   height: 100dvh;
 }
-#modal-carrito[data-visible='true']{
+#modal-carrito[data-visible='true'],
+#modal-carrito-exito[data-visible='true']{
   display:block;
 }
 .modal-content{
@@ -4643,7 +4645,8 @@
 
 }
 
-#btn-cerrar{
+#btn-cerrar,
+#btn-cerrar-exito{
   float: right;
   width: 1.6rem;
   height: 1.6rem;

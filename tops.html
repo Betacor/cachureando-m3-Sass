@@ -179,7 +179,7 @@
 
     <!-- FIN CONTENIDO DE LA PAGINA -->
     <!-- ------ MODAL CARRITO ------ -->
-    <section id="modal-carrito" data-visible="true">
+    <section id="modal-carrito" data-visible="false">
         <div class="modal-content">
             <div class="modal-header">
                 <span>Mi compra</span>
@@ -227,8 +227,17 @@
                     Quien recibirá el paquete</p>
                 </div>
                 <div class="form-footer">
-                <button id="btn-pagar-form">PAGAR</button></div>
+                <button type="button" id="btn-pagar-form">PAGAR</button></div>
             </form>
+        </div>
+    </section>
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito-exito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tu compra está siendo procesada</span>
+                <button id="btn-cerrar-exito">X</button>
+            </div>
         </div>
     </section>
     <!-- PIE DE PAGINA -->  
