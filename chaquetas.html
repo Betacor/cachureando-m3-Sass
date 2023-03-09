@@ -31,7 +31,6 @@
     </header>
     <!-- FIN ENCABEZADO DE LA PAGINA -->
 
-
     <!--CONTENIDO DE LA PAGINA -->
     <section class="section">
         <!-- Inicio Breadcrumbs -->
@@ -43,49 +42,199 @@
             </ol>
         </nav>
         <!-- Fin Breadcrumbs -->
-        
+
         <h2 class="section__title">CHAQUETAS</h2>
-        
-        <!-- Tarjetas de productos -->
-        <div class="container__products-cards">
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7005/707/712/2/w/750/7005707712_6_1_1.jpg?ts=1672846140211">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Blazer blanco</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
                 </div>
             </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/8495/150/630/2/w/750/8495150630_6_1_1.jpg?ts=1671554996069">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Chaqueta rosada</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7043/264/649/2/w/750/7043264649_6_1_1.jpg?ts=1670243613749">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Chaqueta roja</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                    <button id="btn-pagar">PAGAR</button>
                 </div>
-            </div>
-            <div class="product-card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7189/224/743/2/w/750/7189224743_6_1_1.jpg?ts=1671554974853">
-                </figure>
-                <div class="card__content card__content--right">
-                    <h3 class="card__title">Chaqueta beige</h3>
-                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
-                </div>
+                <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-        <!--Fin Tarjetas de Productos-->
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/V/0/1/p/3046/034/802/2/w/750/3046034802_6_1_1.jpg?ts=1671708291389"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAZADORA SOFT BOTONES</h2>
+                <h5 class="product-card__p">Cazadora cropped de cuello solapa y manga larga. Bolsillos delanteros de plastrón con solapa. Cierre frontal con botones dorados con relieve. <br>SKU: 47098678</h5>
+                <p class="price">$42990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/8495/150/630/2/w/750/8495150630_6_1_1.jpg?ts=1671554996069"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>SOBRECAMISA ESTRUCTURA</h2>
+                <h5 class="product-card__p">Sobrecamisa de cuello solapa y manga larga acabada en puño. Bolsillos de plastrón en delantero. Cierre frontal con botones metálicos. <br>SKU: 47098678</h5>
+                <p class="price">$42990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2022/I/0/1/p/3046/825/802/2/w/750/3046825802_6_1_1.jpg?ts=1661499475257"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>BOMBER EFECTO ANTE</h2>
+                <h5 class="product-card__p"> Bomber de cuello redondo y manga larga acabada en puño. Bolsillos delanteros de vivo con botón a presión. Cierre frontal con cremallera metálica.  <br>SKU: 47098678</h5>
+                <p class="price">$32990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/7232/651/505/2/w/750/7232651505_6_1_1.jpg?ts=1674139328491"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAZADORA BOMBER SATINADA</h2>
+                <h5 class="product-card__p"> Bomber de cuello redondo y manga larga acabada en puño. Bolsillos delanteros de vivo con botón a presión. Cierre frontal con cremallera metálica. <br>SKU: 47098678</h5>
+                <p class="price">$32990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2022/V/0/1/p/2969/053/800/2/w/750/2969053800_6_1_1.jpg?ts=1644913690403"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CHAQUETA ACOLCHADA CAPUCHA</h2>
+                <h5 class="product-card__p"> Chaqueta de cuello subido con capucha ajustable con cordón elástico y stopper. Manga larga. Bolsillos laterales con cremallera. Bajo ajustable con cordón elástico y sttoper. Cierre frontal con cremallera. <br>SKU: 47098678</h5>
+                <p class="price">$46990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+       <!--Fin Tarjetas de Productos-->
+    </section>
+
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Mi compra</span>
+                <button id="btn-cerrar">X</button>
+            </div>
+            <div class="lista-productos">
+                <H1>RESUMEN DE COMPRA</H1>
+                <div class="info-cart-product mb-4">
+                    <span class="cantidad-producto-carrito"> 1</span>
+                    <p class="titulo-producto-carrito">Top azul</p>
+                    <span class="precio-producto-carrito">$22990</span>  
+                </div>
+            </div>
+            <form action="">
+                <H1>DIRECCION DE DESPACHO</H1>
+                <div class="form-group">
+                    <label for="">NOMBRE</label>
+                    <input type="text"><p>
+                    Tu nombre</p>
+                </div>
+                <div class="form-group">
+                    <label for="">EMAIL</label>
+                    <input type="text"><p>
+                    tunombre@mail.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="">DIRECCION</label>
+                    <input type="text" required><p>
+                    Calle, Ciudad, País</p>
+                </div>
+                <div class="form-group">
+                    <label for="">REGIÓN</label>
+                    <input type="text" required><p>
+                    Región donde vives</p>
+                </div>
+                <div class="form-group">
+                    <label for="">COMUNA</label>
+                    <input type="text"><p>
+                    Comuna donde vives</p>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="">QUIEN RECIBE</label>
+                    <input type="text"><p>
+                    Quien recibirá el paquete</p>
+                </div>
+                <div class="form-footer">
+                <button type="button" id="btn-pagar-form">PAGAR</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito-exito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tu compra está siendo procesada</span>
+                <button id="btn-cerrar-exito">X</button>
+            </div>
+        </div>
     </section>
     <!-- PIE DE PAGINA -->
     <footer>
