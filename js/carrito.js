@@ -147,6 +147,8 @@ const showHTML = () => {
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
+    const valorIva = document.querySelector('.valorIva')
 	valorTotal.innerText = `$${total}`;
+    valorIva.innerText = `$${total*0.19}`;
 	countProducts.innerText = totalOfProducts;
 };
