@@ -65,7 +65,7 @@
             </div>
 
             <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
+                <div class="row-product hidden"> <!--filas con productos agregados-->
                     <div class="cart-product">
                         <div class="info-cart-product">
                             <span class="cantidad-producto-carrito">1</span>
@@ -90,10 +90,19 @@
                 </div>
 
                 <div class="cart-total hidden">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">$200</span>
-                    <h3>IVA:</h3>
-                    <span class="valorIva">0</span>
+                    <div class="info-valor">
+                        <h3>Total Neto:</h3>
+                        <span class="valor-neto">$200</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>IVA:</h3>
+                        <span class="valor-iva">0</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">0</span>
+                    </div>
+                                        
                     <button id="btn-pagar">PAGAR</button>
                 </div>
                 <p class="cart-empty">El carrito está vacío</p>

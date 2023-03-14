@@ -146,9 +146,13 @@ const showHTML = () => {
 			total + parseInt(product.quantity * product.price.slice(1));
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
+    
+    const valorNeto =document.querySelector('.valor-neto'); //Variable monto neto de compra
+    const valorIva = document.querySelector('.valor-iva'); //Variable para el IVA
 
-    const valorIva = document.querySelector('.valorIva')
+    valorNeto.innerText = `$${Math.round(total*0.81)}`;
+    valorIva.innerText = `$${Math.round(total*0.19)}`;
 	valorTotal.innerText = `$${total}`;
-    valorIva.innerText = `$${total*0.19}`;
-	countProducts.innerText = totalOfProducts;
+	
+    countProducts.innerText = totalOfProducts;
 };
